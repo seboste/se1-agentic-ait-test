@@ -6,7 +6,7 @@ This file serves as a guide for AI agents (like GitHub Copilot, Cursor, or Winds
 ---
 
 ## 🏗 Project Architecture
-* **Runtime:** Java 21 (OpenJDK)
+* **Runtime:** Java 17 (OpenJDK)
 * **Build System:** Maven (using `./mvnw` wrapper)
 * **Testing Framework:** JUnit 5 (Jupiter)
 * **Containerization:** Docker (Multi-stage builds)
@@ -55,5 +55,5 @@ The project includes a `Dockerfile` for consistent deployment.
 ---
 
 ## ⚠️ Constraints
-* **Compatibility:** Do not use features beyond Java 21.
-* **Performance:** Ensure Docker images remain small by using the `eclipse-temurin:21-jre-alpine` base for the final stage.
+* **Compatibility:** Do not use features beyond Java 17.
+* **Performance:** Ensure Docker images remain small by using the `eclipse-temurin:17-jre-alpine` base for the final stage.
